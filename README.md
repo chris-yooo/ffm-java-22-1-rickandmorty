@@ -1,6 +1,12 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For styled-components use first
+
+`npm i @types/styled-components`
+
+then
+
+`npm i @types/styled-components --save-dev`
 
 ## Available Scripts
 
