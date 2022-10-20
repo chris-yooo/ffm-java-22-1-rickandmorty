@@ -2,7 +2,7 @@
 
 For styled-components use first
 
-`npm i @types/styled-components`
+`npm i styled-components`
 
 then
 
