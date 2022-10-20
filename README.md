@@ -8,6 +8,10 @@ then
 
 `npm i @types/styled-components --save-dev`
 
+And very nice you can install in IJ the plugin `Styled Components & Styled JSX`
+
+Then work the css autoformatting within the styled-components block
+
 ## Available Scripts
 
 In the project directory, you can run:
