@@ -18,46 +18,49 @@ export default function CharacterCard(props: Props) {
 }
 
 const StyledSection = styled.section`
-    border: solid 2px black;
-    border-radius: 2pc;
-    box-shadow: 4px 4px 8px 4px #3c3c3c;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-    width: 300px;
-    height: auto;
-    /*flex-grow: 1;*/
-    /*font-size: 1.7vw;*/
+  border: solid 2px black;
+  border-radius: 2pc;
+  box-shadow: 4px 4px 8px 4px #3c3c3c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  width: 300px;
+  height: auto;
+  /*flex-grow: 1;*/
+  /*font-size: 1.7vw;*/
 
-img {
+  img {
     width: 250px;
     height: auto;
-}
-  
-  h2 {
-  font-size: 1.4rem;
   }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
   h3 {
     font-size: 1.0rem;
   }
 }
 
-@media(max-width: 1024px) {
+@media (max-width: 1024px) {
 
-        width: 150px;
-        margin: 10px;
+  width: 150px;
+  margin: 10px;
 
-    h2 {
-        font-size: 1.0rem;
-        text-align: center;
-    }
-    h3 {
-        font-size: 0.7rem;
-        text-align: center;
-    }
-    img {
-        width: 100px;
-    }
+  h2 {
+    font-size: 1.0rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  img {
+    width: 100px;
+  }
 `
