@@ -35,18 +35,23 @@ export default function CharacterGallery() {
     console.log(filterCharacter);
 
     return (<>
-            <StyledInput onChange={handleChange}/>
-
             <StyledMain>
-                {
-                    filterCharacter.map(character => {
-                        return <CharacterCard
-                            name={character.name}
-                            img={character.image}
-                            origin={character.origin.name}
-                            key={nanoid()}/>
-                    })
-                }
+
+                <StyledInput aria-label="namen suchen"
+                             onChange={handleChange}
+                             placeholder="Gebe hier einen Namen ein"/>
+
+                <StyledSection>
+                    {
+                        filterCharacter.map(character => {
+                            return <CharacterCard
+                                name={character.name}
+                                img={character.image}
+                                origin={character.origin.name}
+                                key={nanoid()}/>
+                        })
+                    }
+                </StyledSection>
             </StyledMain>
         </>
     );
@@ -54,11 +59,22 @@ export default function CharacterGallery() {
 
 const StyledMain = styled.main`
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   justify-content: center;
+  align-items: center;
 `
 
 const StyledInput = styled.input`
+  margin-top: 20px;
+  padding: 5px;
+  height: 30px;
+  width: 250px;
+  border: solid grey 2px;
+  border-radius: 5pc;
+`
+
+const StyledSection = styled.section`
+  margin: 25px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
